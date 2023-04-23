@@ -14,7 +14,6 @@ import com.sun.net.httpserver.HttpServer;
 interface URLHandler {
     String handleRequest(URI url);
 }
-
 class ServerHttpHandler implements HttpHandler {
     URLHandler handler;
     ServerHttpHandler(URLHandler handler) {
